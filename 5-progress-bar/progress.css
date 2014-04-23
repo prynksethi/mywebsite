@@ -1,0 +1,29 @@
+progress
+{
+-webkit-appearance: none;
+margin-left: 400px;
+margin-top: 150px;
+width: 300px;
+height: 300px;
+}
+progress::-webkit-progress-bar
+{
+border-radius: 150px;
+border-color: black;
+background-color: white;
+background-image: url("images.jpg");
+
+}
+progress::-webkit-progress-value
+{
+border-radius: 150px;
+}
+#numValue
+{
+margin-left: 400px;
+}
+input 
+{
+padding: 5px 5px 5px 5px;
+
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.hearts
+{
+background: 
+radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%),
+radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%),
+radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%),
+
+radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
+radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
+radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px,
+radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px,
+radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%) 50px 50px;
+background-color:#b03;
+background-size:100px 100px;
+padding: 90px;
+border-radius: 90px;
+margin-left: 100px;
+}
+.hearts:hover
+{
+border: 8px solid purple;
+}
+
+.stars
+{
+background:
+linear-gradient(324deg, #232927 4%,   transparent 4%) -70px 43px,
+linear-gradient( 36deg, #232927 4%,   transparent 4%) 30px 43px,
+linear-gradient( 72deg, #e3d7bf 8.5%, transparent 8.5%) 30px 43px,
+linear-gradient(288deg, #e3d7bf 8.5%, transparent 8.5%) -70px 43px,
+linear-gradient(216deg, #e3d7bf 7.5%, transparent 7.5%) -70px 23px,
+linear-gradient(144deg, #e3d7bf 7.5%, transparent 7.5%) 30px 23px,
+
+linear-gradient(324deg, #232927 4%,   transparent 4%) -20px 93px,
+linear-gradient( 36deg, #232927 4%,   transparent 4%) 80px 93px,
+linear-gradient( 72deg, #e3d7bf 8.5%, transparent 8.5%) 80px 93px,
+linear-gradient(288deg, #e3d7bf 8.5%, transparent 8.5%) -20px 93px,
+linear-gradient(216deg, #e3d7bf 7.5%, transparent 7.5%) -20px 73px,
+linear-gradient(144deg, #e3d7bf 7.5%, transparent 7.5%) 80px 73px;
+background-color: #232927;
+background-size: 100px 100px;
+padding: 120px;
+border-radius: 60px;
+color: white;
+margin-left: 120px;
+}
+.stars:hover
+{
+background-color: black;
+}
+
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	position: relative;
+	padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;	
+}
+
+.blue
+{
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
+}
+
+.red
+{
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+}
+
+.green
+{
+	background-color: #82BF56;
+	border-bottom: 5px solid #669644;
+	text-shadow: 0px -2px #669644;
+}
+
+.yellow
+{
+	background-color: #F2CF66;
+	border-bottom: 5px solid #D1B358;
+	text-shadow: 0px -2px #D1B358;
+}
+
+.action-button:active
+{
+	top: 5px;
+	border-bottom: 0px solid;
+}
+.black
+{
+text-decoration: none;
+width: 120px;
+height: 80px;
+background-color: black;
+color: white;
+font-size: 22px;
+border-radius: 12px;
+padding: 10px;
+font-family: 'Pacifico', cursive;
+}
+.black:hover
+{
+border-radius: 0px;
+}
+.black:active
+{
+background-color: pink;
+}
+.yellit:hover
+{
+background-color: white;
+}
+</style>
+<title>
+Buttons 
+</title>
+</head>
+<body>
+<div style="padding-top:5px; padding-left:30px;">
+<h1 style="color: #FF0000;font-family: Calibri;font-weight: 100;">AWESOME BUTTONS</h1><br/>
+   <input type="button" value="original button"><br/><br/>
+<input style="width: 140px; height: 60px; background-color: red; color: white;" type="button" value="customized button"><br/><br/><br/>
+  <a href="#" class="black"> I'm Black button</a><br/><br/><br/>
+ <a href="#" class="action-button shadow animate blue">Hello</a>
+  <a href="#" class="action-button shadow animate red">How</a>
+  <a href="#" class="action-button shadow animate green">Are</a>
+  <a href="#" class="action-button shadow animate yellow">You?</a><br/><br/><br/><br/><br/>
+<a style="text-decoration: none; font-family: Calibri; padding: 10px; color: purple; background-color: yellow; font-size: 22px;border: 3px solid orange; border-radius: 10px;"  href="#" class="yellit">click me!</a> <br/><br/><br/><br/><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#" class="stars">.</a>
+<a href="#" class="hearts">.</a>
+</div>
+
+
+</body>
+</html>

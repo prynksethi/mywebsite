@@ -1,0 +1,97 @@
+body
+{
+background-color: #58585D;
+}
+#container
+{
+position:absolute;
+left:  350px;
+top: 150px;
+height: 265px;
+width: 460px;
+background-color: #E1E1E1;
+border-top-left-radius: 25px;
+border-top-right-radius: 25px;
+text-align: center;
+}
+#heading
+{padding-top: 50px;
+padding-bottom: 10px;
+font-size: 24px;
+font-family: Arial,Georgia,Serif;
+color: #F45B4B;
+}
+
+input
+{text-align: left;
+font-weight: bold;
+border-radius: 20px;
+height: 30px;
+width:280px;
+padding-left: 20px;
+padding-top: 5px;
+padding-bottom: 5px;
+background-color: #CACACA;
+color: #A1A1A1;
+border: 0px;
+}
+
+#username ,#password
+{
+padding-bottom:5px;
+padding-top:5px;
+}
+
+
+
+
+input[type=submit]
+{
+width: 80px;
+height: 30px;
+background-color: #F45B4B;
+color: white;
+border-radius: 25px;
+float: right;
+margin-right: 80px;
+margin-top: 5px;
+padding: 5px;
+text-align: center;
+cursor: pointer;
+}
+input[type=submit]:hover {
+    border: 1px solid #b6bfc0;
+    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .7), 0 0 0 5px #f5f7f8;
+}
+#container a ,text
+{
+color: #F45B4B;
+text-decoration:none;
+font-family: arial;
+font-size: 12px;
+position: relative;
+left: 90px;
+top: 10px;
+}
+#container #red
+{
+position:relative;
+top: 57px;
+width:380px;
+height:60px;
+background-color: #F45B4B;
+border-bottom-left-radius: 25px;
+border-bottom-right-radius: 25px;
+padding-top: 40px;
+padding-right: 80px;
+text-align: right;
+color: white;
+font-family: arial;
+font-size: 12px;
+}
+span
+{
+font-size: 23px;
+
+font-family: arial;
+}

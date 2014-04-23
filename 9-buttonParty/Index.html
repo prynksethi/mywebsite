@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+          function playSound(el,soundfile) {
+              var embed = document.getElementById("embed");
+              if (!embed) {
+                  var embed = document.createElement("embed");
+                      embed.id= "embed";
+                      embed.setAttribute("src", soundfile);
+                      embed.setAttribute("hidden", "true");
+                  el.appendChild(embed);
+              } else {
+                  embed.parentNode.removeChild(embed);
+              }
+          }
+      </script>
+	<style>
+#button6
+{
+	width: 80px;
+	height: 80px;
+	border:5px solid black;
+}
+#button6:hover
+{
+	transition: all 2s ease-in-out;
+	
+  -webkit-transform: rotateZ(360deg) rotateY(360deg) ;
+}
+#button4
+{
+	width: 60px;
+	height: 60px;
+	border: 2px solid black;
+	background-color: yellow;
+}
+#button4:hover
+{
+	transition: all 1s ease-in;
+	-webkit-transform: translateX(180px);
+	
+}
+
+#button5
+{
+	width: 60px;
+	height: 60px;
+	border: 2px solid black;
+	background-color: pink;
+}
+#button5:hover
+{
+	
+   transition:2s ease ;
+   -webkit-transform: translateX(200px) translateY(-500px);
+	
+	background-color: white;
+	
+}
+#button3
+{   
+	width: 60px;
+	height: 60px;
+	border: 5px solid black;
+	
+}
+#button3:hover
+{   
+	transition: all 1s ease-in;
+	-webkit-transform: scale(2,2);
+
+	
+}
+#button2
+{
+	text-align: center;
+	border: 3px solid green;
+}
+#button2:hover
+{   transition: all 2s ease-in;
+	-webkit-transform: rotate(720deg) scale(2,2);
+}
+#button1 {
+	
+	border: 2px solid red;
+	
+transition: all 1s ease-in;
+
+
+}
+#button1:hover
+{
+	
+border-radius: 30px;
+-webkit-transform:  translateX(-700px) rotate(720deg) ;
+}
+</style>
+<title>
+button party
+</title>
+
+</head>
+<body>
+	<div style="margin-left: 500px;"id="button">
+		<p style="color:orange;  font-family: Calibri;margin-bottom:-3px;"> Click Me</p>
+    <span id="dummy" onclick="playSound(this, 'button-8.mp3');">
+      <img src="1.jpg" name="Bottom-1" width="300" height="100" border="0" id="Bottom-1"/>
+
+    </span>
+</div>
+
+	<div style="width: 200px; height: 200px; margin: 20px;">
+
+		<div id="button1" style="width: 60px; height: 60px; line-height:3;text-align: center ;margin-left: 900px; margin-top:2px;">
+			click
+		</div>
+		<div id="button2" style="width: 60px; line-height: 3; height: 60px;margin-left: 190px;">
+			me
+		</div>
+		<div id="button3" style="margin-left:700px;">
+			
+			<p>Goooooo!</p>
+		
+		</div>
+		
+		<div id="button4" style="margin-left: 400px;">
+			<p>Click Me</p>
+		</div>
+
+<div id="button5">
+			<p>yahhoo</p>
+		</div>
+		<div id="button6" style="margin-left: 300px;">
+			<p>Noooo</p>
+		</div>
+		
+<div id="button1" style="width: 60px; height: 60px; line-height:3;text-align: center; margin-left: 900px;">
+			click
+		</div>
+
+    
+</div>
+
+</body>
+</html>
+

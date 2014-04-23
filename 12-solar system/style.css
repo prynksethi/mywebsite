@@ -1,0 +1,127 @@
+html, body {
+    /* The universe takes up all available space */
+    width: 100%;
+    height: 100%;
+    
+    /* The universe is black */
+    background-color: black;
+}
+
+#sun {
+    position: absolute;
+    /* Positions the top-left corner of the image to be *
+    /* in the middle of the box */
+    top: 50%;
+    left: 50%;
+    
+    /* Play with these numbers to see what it does */
+    height: 200px;
+    width: 200px;
+    margin-top: -100px; 
+    margin-left: -100px;
+    
+}
+
+#earth {
+   
+    position: absolute;
+    top: 0;
+    left: 50%;
+     height: 56px;
+    width: 56px;
+    margin-left: -25px;
+    margin-top: -25px;
+
+}
+
+#earth-orbit {
+    /* For Section #2 */
+     position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 500px;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -250px;
+
+    border-width: 1px;
+    border-style: dashed;
+    border-color: white;
+    border-radius: 50%;
+    -webkit-animation: spin-right 10s linear infinite;
+     -moz-animation: spin-right 10s linear infinite;
+      -ms-animation: spin-right 10s linear infinite;
+       -o-animation: spin-right 10s linear infinite;
+          animation: spin-right 10s linear infinite;
+}
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+#moon-orbit {
+    
+     position: absolute;
+    top: 20%;
+    left: 30%;
+
+    width: 550px;
+    height: 550px;
+    margin-top: -90px;
+    margin-left: -90px;
+
+    border-width: 1px;
+    border-style: dashed;
+    border-color: white;
+    border-radius: 50%;
+    -webkit-animation: spin-left 20s linear infinite;
+     -moz-animation: spin-left 20s linear infinite;
+      -ms-animation: spin-left 20s linear infinite;
+       -o-animation: spin-left 20s linear infinite;
+          animation: spin-left 20s linear infinite;
+}
+@-webkit-keyframes spin-left {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-left {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+#moon {
+   
+    position: absolute;
+    top: 0;
+    left: 50%;
+     height: 56px;
+    width: 56px;
+    margin-left: -25px;
+    margin-top: -25px;
+
+  }

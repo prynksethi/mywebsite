@@ -1,0 +1,74 @@
+<!DOCTYPE HTML> 
+<html>
+<head> 
+<title>
+Drag-Drop
+</title>
+<style type="text/css"> 
+.mover 
+{ 
+width:100px; 
+height:100px; 
+line-height: 5; 
+margin: 10px; 
+border-radius: 50px; 
+background:orange; 
+text-align:center;
+display: block;
+float: left;
+font-family: Calibri;
+color: green;
+font-size: 20px;
+} 
+
+</style> 
+<script type="text/javascript"> 
+function dragWord(dragEvent)
+{ 
+dragEvent.dataTransfer.setData("text/html", dragEvent.target.textContent+"|"+dragEvent.target.parentNode.id);
+ } 
+function dropWord(dropEvent)
+{ 
+var dropData = dropEvent.dataTransfer.getData("text/html"); 
+var dropItems = dropData.split("|"); 
+var prevElem = document.getElementById(dropItems[1]); 
+prevElem.getElementsByTagName("div")[0].textContent = dropEvent.target.textContent; 
+dropEvent.target.textContent = dropItems[0]; 
+dropEvent.preventDefault(); 
+} 
+</script> 
+</head> 
+<body> 
+<h1 style="color:orange; font-family: arial;">Let's Drag and Drop the words</h1>
+<div id="box1" ondragover="event.preventDefault()" ondrop="dropWord(event)"> 
+<div class="mover" draggable="true" ondragstart="dragWord(event)">
+I
+</div> 
+</div> 
+<div id="box2" ondragover="event.preventDefault()" ondrop="dropWord(event)">
+<div class="mover" draggable="true" ondragstart="dragWord(event)">
+Am
+</div> 
+</div> 
+<div id="box3" ondragover="event.preventDefault()" ondrop="dropWord(event)"> 
+<div class="mover" draggable="true" ondragstart="dragWord(event)">
+Working
+</div> 
+</div> 
+<div id="box4" ondragover="event.preventDefault()" ondrop="dropWord(event)"> 
+<div class="mover" draggable="true" ondragstart="dragWord(event)">
+More 
+</div> 
+</div> 
+<div id="box5" ondragover="event.preventDefault()" ondrop="dropWord(event)"> 
+<div class="mover" draggable="true" ondragstart="dragWord(event)">
+On
+</div> 
+</div> 
+<div id="box6" ondragover="event.preventDefault()" ondrop="dropWord(event)"> 
+<div class="mover" draggable="true" ondragstart="dragWord(event)">
+This
+</div> 
+</div> 
+</body> 
+</html>

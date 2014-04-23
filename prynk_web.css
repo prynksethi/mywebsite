@@ -1,0 +1,91 @@
+#fixed-sidebar
+{position:fixed;
+top: 0px;
+left: 0px;
+width: 27%;
+height: 100%;
+background-color: #F99B93;
+text-align: center;
+color: #555555;
+font-size: 36px;
+font-family: 'Open Sans', sans-serif;
+line-height: 150%;
+
+}
+picture img
+{
+width: 150px;
+height: 150px;
+border-radius: 75px;
+margin-top : 30px;
+margin-left: 5%;
+margin-bottom: 20px;
+
+}
+p
+{ 
+font-size: 15px;
+padding-left: 50px;
+padding-right: 50px;
+line-height: 130%;
+padding-top: 10px;
+color: rgba(255, 255 , 255 , 0.7);
+}
+span
+{padding: 0 15px 0 15px;
+font-size: 50px;
+}
+#share 
+{position: absolute;
+bottom: 10px;
+padding-left: 70px;
+padding-right: 70px;
+-webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+
+}
+#share :hover{
+position: relative;
+bottom: 5px;
+}
+
+#main-content
+{
+float: right;
+width: 67%;
+height: 100%;
+margin-top: 40px;
+color: #F04537;
+font-size: 22px;
+font-family: 'Open Sans', sans-serif;
+-webkit-font-smoothing: antialiased;
+ text-shadow: 1px 1px 1px rgba(240,69,55,.1);
+padding-bottom: 40px;
+
+
+}
+#story
+{
+color: #464646;
+padding-top: 30px;
+font-size: 14.5px;
+padding-right: 100px;
+line-height: 130%;
+}
+#challenges 
+{
+color: #F04537;
+font-size: 17px;
+}
+#challengestory
+{
+color: #464646;
+font-size: 14.5px;
+}
+#challengestory a
+{
+color: #F04537;
+}

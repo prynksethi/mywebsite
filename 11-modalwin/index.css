@@ -1,0 +1,67 @@
+.modalDialog 
+{ 
+position: fixed; 
+font-family: Arial; 
+top: 0; 
+right: 0; 
+bottom: 0; 
+left: 0; 
+background: rgba(0,0,0,0.8); 
+z-index: 99999; 
+-webkit-transition: opacity 400ms ease-in; 
+-moz-transition: opacity 400ms ease-in; 
+transition: opacity 400ms ease-in; 
+display: none; 
+pointer-events: none; 
+}
+
+.modalDialog:target 
+{ 
+display: block; 
+pointer-events: auto; 
+} 
+#testing{
+	background-color: #FCD04B; 
+    width: 90px;
+    height: 35px;
+    position: absolute; 
+top: 180px; 
+margin-left: 45%;
+
+text-align: center;
+line-height: 2;
+
+
+text-decoration: none;
+font-family: arial; 
+color: black;
+
+
+font-size: 18px; 
+
+border: 2px dashed #FCD04B;
+
+}
+
+#testing:before
+{
+
+	content: "HOVER";
+}
+#testing:hover:before
+{
+	
+	color: #333333;
+	
+	
+    content: "CLICK";
+}
+
+
+
+
+
+
+
+
+
